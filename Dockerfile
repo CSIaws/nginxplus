@@ -1,4 +1,4 @@
-From nginx:alpine
+FROM nginx
 ENV LOGLEVEL default
 ENV DEBUG default
 RUN mkdir /app
