@@ -12,4 +12,4 @@ RUN chmod 775 /app/nginxwrapper.sh
 RUN chmod 775 /app/ssl.tpl
 
 EXPOSE 80
-CMD ["/app/nginxwrapper.sh"]
+#CMD ["/app/nginxwrapper.sh"]
