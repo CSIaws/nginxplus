@@ -2,6 +2,7 @@ FROM nginx
 ENV LOGLEVEL default
 ENV DEBUG default
 
+RUN mkdir -p /app
 COPY . /app
 WORKDIR /app
 
