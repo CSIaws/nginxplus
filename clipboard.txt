@@ -1,7 +1,7 @@
 aws ecs create-service  \
     --cluster cluster-wise-dev-ap \
     --service-name ecs-keycloak \
-    --task-definition task-wise-dev-auth-keycloak:20  \
+    --task-definition task-wise-dev-auth-keycloak:22  \
     --load-balancers '[{"targetGroupArn":"arn:aws:elasticloadbalancing:ap-northeast-1:727922501631:targetgroup/tg-wise-dev-keycloak/550b7735648ccdcd","containerName":"container-wise-dev-auth-key-auth","containerPort":8080}, {"targetGroupArn":"arn:aws:elasticloadbalancing:ap-northeast-1:727922501631:targetgroup/tg-wise-dev-keycloak-admin/36f569b72c92cce3","containerName":"container-wise-dev-auth-key-auth","containerPort":8081}]' \
     --desired-count 2 \
     --launch-type FARGATE \
