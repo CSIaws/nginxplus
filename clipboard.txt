@@ -6,6 +6,6 @@ aws ecs create-service  \
     --desired-count 2 \
     --launch-type FARGATE \
     --platform-version LATEST \
-    --network-configuration "awsvpcConfiguration={subnets=[subnet-0562c254dac431476],securityGroups=[sg-03f692cd9f9d5efde,sg-0657ca510bb4e01ef],assignPublicIp=DISABLED}"
+    --network-configuration "awsvpcConfiguration={subnets=[subnet-0562c254dac431476,subnet-07de88c45f3b46591],securityGroups=[sg-03f692cd9f9d5efde,sg-0657ca510bb4e01ef],assignPublicIp=DISABLED}"
     
     
